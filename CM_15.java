@@ -6,6 +6,8 @@ public class CM_15 {
 
         Scanner sc = new Scanner(System.in);
 
+        String status1 = "" ,status2 = "";
+
         //Input data Mahasiswa
         System.out.println("=== INPUT DATA MAHASISWA ===");
         System.out.println("Nama : ");
@@ -95,10 +97,7 @@ public class CM_15 {
         System.out.println("-----------------------------");
         System.out.println("Nama : " +nama);
         System.out.println("NIM : " +nim);
-        System.out.println("Masukkan status mata kuliah 1 (LULUS/TIDAK): ");
-        String status1 = sc.next();
-        System.out.println("Masukkan status mata kuliah 2 (LULUS/TIDAK): ");
-        String status2 = sc.next();
+
 
         System.out.println("=== Status Kelulusan ===");
         //Nested if
@@ -110,8 +109,8 @@ public class CM_15 {
             }
                 
         }else {
-            System.out.println("Status Semester: TIDAK LULUS");
-        }
+            System.out.println("Status Semester: TIDAK LULUS (Karena ada mata kuliah yang tidak lulus)");
+        }   
 
         sc.close();
         
